@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q1",
+    "pregunta": "¿Qué hace yield dentro de una fixture de pytest?",
+    "documentos_relevantes": ["pytest_fixtures"],
+    "tipo": "lexica",
+    "nota": "Incluye términos técnicos exactos como yield y fixture; favorece a BM25."
+  },
+  {
+    "id": "q2",
+    "pregunta": "¿Cómo evito el SettingWithCopyWarning al asignar valores?",
+    "documentos_relevantes": ["pandas_dataframes"],
+    "tipo": "lexica",
+    "nota": "El nombre exacto del warning aparece en el documento y favorece la recuperación lexical."
+  },
+  {
+    "id": "q3",
+    "pregunta": "¿Cómo agrego una regla de validación propia a un campo, más allá del tipo?",
+    "documentos_relevantes": ["pydantic_validacion"],
+    "tipo": "semantica",
+    "nota": "Describe el concepto sin mencionar Pydantic ni field_validator."
+  },
+  {
+    "id": "q4",
+    "pregunta": "¿Cómo evito el problema de hacer una consulta adicional por cada relación al recorrer muchos objetos del ORM?",
+    "documentos_relevantes": ["sqlalchemy_sesiones"],
+    "tipo": "semantica",
+    "nota": "Describe el problema N+1 sin nombrarlo explícitamente; el documento propone selectinload o joinedload."
+  },
+  {
+    "id": "q5",
+    "pregunta": "¿Cómo puedo ejecutar una librería bloqueante dentro de código async sin bloquear el event loop?",
+    "documentos_relevantes": ["asyncio_concurrencia", "fastapi_dependencias"],
+    "tipo": "mixta",
+    "nota": "El problema aparece explícitamente en ambos documentos; asyncio propone asyncio.to_thread y FastAPI explica el impacto sobre el event loop."
+  },
+  {
+    "id": "q6",
+    "pregunta": "¿Qué diferencia hay entre loc e iloc?",
+    "documentos_relevantes": ["pandas_dataframes"],
+    "tipo": "lexica",
+    "nota": "Los nombres exactos loc e iloc aparecen literalmente y favorecen BM25."
+  },
+  {
+    "id": "q7",
+    "pregunta": "¿Qué decorador se utiliza para declarar una fixture?",
+    "documentos_relevantes": ["pytest_fixtures"],
+    "tipo": "lexica",
+    "nota": "El término pytest.fixture aparece literalmente en el documento."
+  },
+  {
+    "id": "q8",
+    "pregunta": "¿Cómo reutilizo lógica común entre distintos endpoints mediante dependencias?",
+    "documentos_relevantes": ["fastapi_dependencias"],
+    "tipo": "semantica",
+    "nota": "Describe el uso de dependencias sin mencionar directamente Depends."
+  },
+  {
+    "id": "q9",
+    "pregunta": "¿Cómo se administra una sesión de base de datos durante una transacción?",
+    "documentos_relevantes": ["sqlalchemy_sesiones"],
+    "tipo": "semantica",
+    "nota": "El documento explica Session, commit, rollback y el uso del context manager."
+  },
+  {
+    "id": "q10",
+    "pregunta": "¿Cómo ejecuto código bloqueante sin detener el event loop?",
+    "documentos_relevantes": ["asyncio_concurrencia"],
+    "tipo": "semantica",
+    "nota": "El documento propone asyncio.to_thread para delegar código bloqueante a un hilo."
+  }
+]
