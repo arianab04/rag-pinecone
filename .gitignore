@@ -1,5 +1,16 @@
+# Variables de entorno
 .env
+
+# Entornos virtuales
 .venv/
+.venv312/
+
+# Python
 __pycache__/
 *.pyc
+
+# Jupyter
 .ipynb_checkpoints/
+
+# LangGraph / SQLite
+checkpoints.db
